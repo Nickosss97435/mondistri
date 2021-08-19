@@ -1,0 +1,792 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Cantarell&family=Open+Sans:wght@300&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Cantarell&family=Open+Sans:wght@300&family=Righteous&display=swap");
+/* line 5, app.scss */
+:root {
+  /* theme colors */
+  --color-gray: #ffffff;
+  --color-bue-1: #130f40;
+  --color-gblur: #ff00008c;
+  --color-blue-2: #30336b;
+  --color-blue-3: #000000;
+  --color-blue-4: #000000;
+  --color-green-1: #6ab04c;
+  --color-green-2: #badc58;
+  --color-orange-1: #ff0000;
+  --color-orange-2: #ffbe76;
+  --color-yellox-1: #f9ca24;
+  --color-yellow-2: #f6e58d;
+  --color-white: #ffffff;
+  --color-white: #ffffff;
+  --color-dark: rgba(255, 255, 255, 0);
+  /*  theme font-family */
+  --font-title: "Righteous", cursive;
+  --font-subtitle: "Open Sans", sans-serif;
+  --font-subtitle-2: "Cantarell", sans-serif;
+  --font-text: "Advent Pro", sans-serif;
+}
+
+/* line 31, app.scss */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 37, app.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 43, app.scss */
+header {
+  width: 100%;
+  line-height: 50px;
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffffcb;
+}
+
+/* line 51, app.scss */
+.secondary {
+  background-color: #fffffff8;
+  box-shadow: 0px 0px 17px 0px;
+  transition: all 0.5s ease-in-out;
+  opacity: 70%;
+}
+
+/* line 57, app.scss */
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* line 70, app.scss */
+.col-sm-12 {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}
+
+/* line 74, app.scss */
+.col-sm-4 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* line 78, app.scss */
+.col-sm-5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* line 82, app.scss */
+.col-sm-6 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* line 87, app.scss */
+nav {
+  position: relative;
+  float: right;
+  text-align: right;
+}
+
+/* line 93, app.scss */
+a {
+  /* font-family: Advent Pro, sans-serif; */
+  text-decoration: none;
+}
+
+/* line 97, app.scss */
+ul {
+  list-style: none;
+}
+
+/* line 100, app.scss */
+ul li {
+  display: inline-block;
+  font-family: var(--font-subtitle);
+}
+
+/* line 104, app.scss */
+header nav {
+  width: 100%;
+  padding: 10px 0 0 0px;
+}
+
+/* line 124, app.scss */
+header nav img {
+  float: left;
+  padding: 0 0 0 35px;
+}
+
+/* line 129, app.scss */
+.header--logo {
+  float: left;
+  padding: 10px;
+  margin: 10px 10px 10px 30px;
+  height: 100px;
+  width: 200px;
+}
+
+/* line 137, app.scss */
+header nav ul li a {
+  padding-right: 90px;
+  font-weight: bolder;
+  color: black;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 143, app.scss */
+header nav ul li a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+/* line 148, app.scss */
+.img1 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(/assets/img/agence_Sud.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 153, app.scss */
+.img2 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.733),
+      rgba(255, 255, 255, 0.753)
+    ),
+    url(/assets/img/page3.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 158, app.scss */
+.img3 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.671),
+      rgba(255, 255, 255, 0.747)
+    ),
+    url(/assets/img/page4.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 163, app.scss */
+.slider,
+.slider ul,
+.slider ul li {
+  height: 800px;
+  width: 100%;
+  color: var(--color-blue-4);
+  text-align: center;
+}
+
+/* line 171, app.scss */
+.slider h2 {
+  font-weight: bold;
+  margin-top: 270px;
+  font-size: 50px;
+  color: var(--color-blue-4);
+}
+
+/* line 177, app.scss */
+.slider h3 p {
+  font-size: 30px;
+  font-weight: 20px;
+}
+
+/* line 181, app.scss */
+.slider span {
+  color: var(--color-orange-1);
+}
+
+/* line 184, app.scss */
+.slider a {
+  font-family: var(--font-text);
+  padding: 10px 50px;
+  margin-right: 10px;
+}
+
+/* line 189, app.scss */
+.slider a.btn-half {
+  background-color: var(--color-gblur);
+  color: var(--color-blue-4);
+  transition: 0.5s ease-in-out;
+}
+
+/* line 194, app.scss */
+.slider a.btn-half:hover {
+  opacity: 0.7;
+}
+
+/* line 197, app.scss */
+.slider a.btn-full {
+  background-color: var(--color-orange-1);
+  color: var(--color-blue-4);
+  transition: 0.5s ease-in-out;
+}
+
+/* line 202, app.scss */
+.slider a.btn-full:hover {
+  opacity: 0.7;
+}
+
+/* line 206, app.scss */
+.slider i {
+  color: var(--color-orange-1);
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+/* line 211, app.scss */
+.slider .fa {
+  color: var(--color-gblur);
+}
+
+/* line 214, app.scss */
+.slider i span {
+  font-family: var(--font-text);
+}
+
+/*...................................... INTRO ..................................................*/
+/* line 218, app.scss */
+.intro-area {
+  position: relative;
+  padding: 10% 2%;
+  text-align: center;
+  /*background-color: #535c681c;*/
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(/assets/img/electric-car-1458836_960_720.jpg);
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+/* line 232, app.scss */
+h2 {
+  padding: 0 0 20px 0;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  color: rgb(170, 0, 0);
+}
+
+/* line 238, app.scss */
+.sub-heading {
+  position: relative;
+  margin-bottom: 75px;
+}
+
+/* line 242, app.scss */
+.sub-heading::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -3%;
+  width: 6%;
+  height: 1px;
+  background-color: var(--color-green-2);
+  z-index: 1;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+/* line 258, app.scss */
+.sub-heading:hover::before {
+  width: 24%;
+  margin-left: -12px;
+}
+
+/* line 262, app.scss */
+.sub-heading:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12%;
+  width: 24%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.sub-heading img {
+  width: 20rem;
+  height: 15rem;
+  margin: 0rem;
+  border-radius: 5%;
+  -webkit-box-shadow: 18px 14px 28px 0px #383838;
+  box-shadow: 18px 14px 28px 0px #494949;
+}
+
+/* line 272, app.scss */
+.sub-heading p {
+  color: #000000;
+  display: inline-block;
+  padding: 0px 0px 20px;
+  position: relative;
+  line-height: 24px;
+  letter-spacing: 0.025;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* line 280, app.scss */
+.sub-heading h3 {
+  color: #1b1b1b;
+  display: inline-block;
+  padding: 0px 0px 20px;
+  position: relative;
+  line-height: 24px;
+  letter-spacing: 0.025;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* line 289, app.scss */
+.intro-block {
+  position: relative;
+  background-color: rgba(129, 146, 146, 0.904);
+  margin: 50px 0px 0px;
+  text-align: center;
+  padding: 70px 25px 40px;
+  border-radius: 10px 10px 10px 10px;
+  font-family: var(--font-subtitle-2);
+}
+
+/* line 299, app.scss */
+.intro-block :hover,
+.into-block.active {
+  background: var(--color-gray);
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* line 304, app.scss */
+.intro-block:hover {
+  --webkit-transition: 0.6s;
+  --moztransition: 0.6s;
+  --moz-transition: 0.6s;
+  --o-transition: 0.6s;
+  --ms-transition: 0.6s;
+}
+
+/* line 311, app.scss */
+.intro-block .intro-icon {
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  margin-left: -33%;
+}
+
+/* line 317, app.scss */
+.intro-block .fa {
+  width: 63px;
+  height: 63px;
+  font-size: 30px;
+  color: #4d4d4d;
+  line-height: 2;
+  background: var(--color-gray);
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 10px #3a3a3ab0;
+}
+
+/* line 328, app.scss */
+.intro-block:hover .fa,
+.intro-block.active .fa {
+  background: #f1a500;
+  color: var(--color-gray);
+  box-shadow: 0px 0px 0px 10px var(--color-gblur);
+}
+
+/* line 334, app.scss */
+.intro-block h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* line 342, app.scss */
+.intro-block p {
+  color: var(--color-gray);
+}
+
+/* line 346, app.scss */
+.intro-block:hover h3,
+.intro-block:hover p {
+  color: #000000;
+}
+
+/*.............................................. FATIFS .............................................*/
+/* line 353, app.scss */
+.col-sm-13 {
+  position: relative;
+  padding: 100px 0px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(/assets/img/electricity-4666566_960_720.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  font-family: var(--font-subtitle-2);
+}
+
+/* line 366, app.scss */
+.col-sm-13 h2 {
+  text-align: center;
+}
+
+/* line 369, app.scss */
+.sub-tarif h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-orange-1);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* line 376, app.scss */
+.sub-tarif {
+  padding: 20px;
+}
+
+/* line 383, app.scss */
+.sub-tarif h2 {
+  padding: 1rem;
+}
+
+/* line 388, app.scss */
+.sub-tarif h3 {
+  padding: 3rem 0 3rem 0.3rem;
+}
+
+/* line 427, app.scss */
+.sub-tarif p {
+  color: #252c3a;
+  display: inline;
+  line-height: 24px;
+  letter-spacing: 0.025;
+  text-align: justify;
+}
+
+/* line 434, app.scss */
+.srv1 h1 {
+  padding: 0 3rem 0 0.3rem;
+}
+
+.srv1 {
+  width: 100%;
+}
+.srv1 img {
+  width: 10rem;
+  height: 15rem;
+  margin: 3rem;
+  border-radius: 5%;
+  -webkit-box-shadow: 18px 14px 28px 0px #383838;
+  box-shadow: 18px 14px 28px 0px #494949;
+}
+
+/* line 437, app.scss */
+.srv1 p {
+  padding-left: 90%;
+}
+
+/*............................................... FOOTER ............................................*/
+/* line 443, app.scss */
+footer {
+  /* background-color: #535c68; */
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(/assets/img/light-bulb-3104355_960_720.jpg);
+  background-size: 100% 100%;
+  color: #dff9fb;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  height: 100%;
+}
+
+/* line 456, app.scss */
+footer h2 {
+  color: #fffffff6;
+}
+
+/* line 459, app.scss */
+form {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* line 463, app.scss */
+input,
+textarea,
+button {
+  border: none;
+  width: 55%;
+  padding: 15px 10px;
+  margin: 1px 0;
+  font-size: 1.2em;
+  font-family: "Advent Pro", sans-serif;
+  border-radius: 8px 8px 8px 8px;
+}
+
+/* line 474, app.scss */
+textarea {
+  height: 120px;
+}
+
+/* line 477, app.scss */
+button {
+  font-size: 1.5em;
+  background-color: #969fa5;
+}
+
+/* line 481, app.scss */
+button:hover {
+  background-color: #e55039;
+  color: #fffae1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* line 487, app.scss */
+#deuxiemeTrait {
+  height: 1px;
+  width: 75%;
+  background-color: #95afc0;
+  margin: 60px auto;
+}
+
+/* line 493, app.scss */
+#coordonees p {
+  color: var(--color-blue-2);
+  font-family: var(--font-subtitle-2);
+}
+
+/* line 498, app.scss */
+#copyrightEtIcons {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+
+/* line 503, app.scss */
+#copyright {
+  width: 50%;
+  text-align: left;
+  color: #2e3b72;
+}
+
+/* line 508, app.scss */
+#queranim a {
+  color: #252c3a;
+  font-family: var(--font-subtitle-2);
+}
+
+/* line 512, app.scss */
+#icons {
+  width: 50%;
+  text-align: right;
+}
+
+/* line 516, app.scss */
+#icons a {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 1.3em;
+  color: var(--color-orange-1);
+}
+
+/* line 522, app.scss */
+#icons a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+}
+
+/*...............RESPONSIVE............*/
+/*...... VARIABLE .............*/
+/*......... ZONE HAMBURGER .........*/
+@media only screen and (max-width: 950px) {
+  /* line 7, responsive.scss */
+  .site-pusher,
+  .site-container {
+    height: 100%;
+  }
+
+  /* line 11, responsive.scss */
+  .site-container {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  /* line 15, responsive.scss */
+  .site-pusher {
+    height: 100%;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  /* line 20, responsive.scss */
+  .site-content {
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: white;
+  }
+
+  /* line 31, responsive.scss */
+  .slider i {
+    font-size: 25px;
+  }
+
+  /* line 34, responsive.scss */
+  .slider a {
+    padding: 0;
+  }
+
+  /* line 37, responsive.scss */
+  .row {
+    display: block;
+  }
+
+  /* line 40, responsive.scss */
+  .header {
+    position: absolute;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.801);
+  }
+}
+@media only screen and (max-width: 950px) and (max-width: 950px) {
+  /* line 46, responsive.scss */
+  .logo {
+    position: absolute;
+    left: -999em;
+  }
+}
+@media only screen and (max-width: 950px) {
+  /* line 51, responsive.scss */
+  .header--logo {
+    position: absolute;
+    display: block;
+    float: right;
+    width: 10px;
+    height: 10px;
+  }
+
+  /* line 59, responsive.scss */
+  .header__icon {
+    position: relative;
+    display: block;
+    padding-left: 100px;
+    float: left;
+    width: 50px;
+    height: 66px;
+    background: url(/assets/img/Logo_Mondistri_nav.png);
+    /*........HAMBUGER ..........*/
+    cursor: pointer;
+  }
+  /* line 70, responsive.scss */
+  .header__icon::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 0;
+    top: 16px;
+    left: 15px;
+    z-index: 3;
+    -moz-box-shadow: 0 10px 0 1px rgba(255, 255, 255, 0),
+      0 16px 0 1px rgba(255, 255, 255, 0), 0 22px 0 1px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 10px 0 1px rgba(255, 255, 255, 0),
+      0 16px 0 1px rgba(255, 255, 255, 0), 0 22px 0 1px rgba(255, 255, 255, 0);
+    box-shadow: 0 10px 0 1px rgba(255, 255, 255, 0),
+      0 16px 0 1px rgba(255, 255, 255, 0), 0 22px 0 1px rgba(255, 255, 255, 0);
+  }
+
+  /* line 86, responsive.scss */
+  #copyrightEtIcons {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  /* line 91, responsive.scss */
+  #icons {
+    padding: 2% 0 0 1%;
+    width: 75%;
+    text-align: right;
+  }
+
+  /* line 96, responsive.scss */
+  #copyright {
+    width: 25%;
+    text-align: left;
+    color: #2e3b72;
+    padding: 5% 0 0 1%;
+    font-size: 0.5em;
+  }
+
+  /* line 103, responsive.scss */
+  .menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(185, 185, 185, 0.685);
+    width: 250px;
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  /* line 114, responsive.scss */
+  .menu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(83, 16, 16, 0.801);
+  }
+
+  /* line 126, responsive.scss */
+  .with--sidebar .site-pusher {
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  /* line 129, responsive.scss */
+  .with--sidebar .site-cache {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
